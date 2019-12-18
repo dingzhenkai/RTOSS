@@ -64,9 +64,10 @@ static void sleepingTask(void *pvParameters)
 	TickType_t start;
 	start = *((TickType_t *)pvParameters) - 2400UL;
 	const TickType_t xBlockTime = FREQUENCY_MS;
-
 	for (;; ) {
 		vTaskDelayUntil(&start, xBlockTime);
+		printf("sleeping_s: %d\r\n", xTaskGetTickCount());
+		TickType_t s = xTaskGetTickCount();		while (xTaskGetTickCount() < (s + 1000)) {		}
 		printf("sleeping: %d\r\n", xTaskGetTickCount());
 	}
 }
@@ -78,6 +79,8 @@ static void breakfirstTask(void *pvParameters)
 	const TickType_t xBlockTime = FREQUENCY_MS;
 	for (;; ) {
 		vTaskDelayUntil(&start, xBlockTime);
+		printf("breakfirst_s: %d\r\n", xTaskGetTickCount());
+		TickType_t s = xTaskGetTickCount();		while (xTaskGetTickCount() < (s + 800)) {		}
 		printf("breakfirst: %d\r\n", xTaskGetTickCount());
 	}
 }
@@ -90,6 +93,8 @@ static void workTask(void *pvParameters)
 	const TickType_t xBlockTime = FREQUENCY_MS;
 	for (;; ) {
 		vTaskDelayUntil(&start, xBlockTime);
+		printf("work_s: %d\r\n", xTaskGetTickCount());
+		TickType_t s = xTaskGetTickCount();		while (xTaskGetTickCount() < (s + 600)) {		}
 		printf("work: %d\r\n", xTaskGetTickCount());
 	}
 }
@@ -102,6 +107,8 @@ static void dinnerTask(void *pvParameters)
 	const TickType_t xBlockTime = FREQUENCY_MS;
 	for (;; ) {
 		vTaskDelayUntil(&start, xBlockTime);
+		printf("dinner_s: %d\r\n", xTaskGetTickCount());
+		TickType_t s = xTaskGetTickCount();		while (xTaskGetTickCount() < (s + 2000)) {		}
 		printf("dinner: %d\r\n", xTaskGetTickCount());
 	}
 }
