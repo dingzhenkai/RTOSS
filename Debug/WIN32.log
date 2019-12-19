@@ -1,3 +1,58 @@
 ﻿cl : 命令行 warning D9002: 忽略未知选项“/wc4574”
+  main_full.c
   main_blinky.c
+f:\tcloud\master\courses\real-time_ system\hw2\freertosv10.2.1_191129\freertos\demo\win32-msvc\main_blinky.c(32): warning C4204: 使用了非标准扩展: 非常量聚合初始值设定项
+f:\tcloud\master\courses\real-time_ system\hw2\freertosv10.2.1_191129\freertos\demo\win32-msvc\main_blinky.c(33): warning C4204: 使用了非标准扩展: 非常量聚合初始值设定项
+f:\tcloud\master\courses\real-time_ system\hw2\freertosv10.2.1_191129\freertos\demo\win32-msvc\main_blinky.c(34): warning C4204: 使用了非标准扩展: 非常量聚合初始值设定项
+f:\tcloud\master\courses\real-time_ system\hw2\freertosv10.2.1_191129\freertos\demo\win32-msvc\main_blinky.c(35): warning C4204: 使用了非标准扩展: 非常量聚合初始值设定项
+  main.c
+  Run-time-stats-utils.c
+  timerdemo.c
+  semtest.c
+  recmutex.c
+  integer.c
+  flop.c
+  dynamic.c
+  death.c
+  countsem.c
+  blocktim.c
+  TaskNotify.c
+  StreamBufferInterrupt.c
+  StreamBufferDemo.c
+  StaticAllocation.c
+  QueueSetPolling.c
+  QueueSet.c
+  QueueOverwrite.c
+  正在生成代码...
+f:\tcloud\master\courses\real-time_ system\hw2\freertosv10.2.1_191129\freertos\demo\common\minimal\queueset.c(693): warning C5045: 如果指定了 /Qspectre 开关，编译器会插入内存负载的 Spectre 缓解
+  f:\tcloud\master\courses\real-time_ system\hw2\freertosv10.2.1_191129\freertos\demo\common\minimal\queueset.c(687) : 注意: 在此行上通过对比检查索引 "x" 范围
+  f:\tcloud\master\courses\real-time_ system\hw2\freertosv10.2.1_191129\freertos\demo\common\minimal\queueset.c(693) : 注意: 此行上的源调用
+  正在编译...
+  QPeek.c
+  PollQ.c
+  MessageBufferDemo.c
+  MessageBufferAMP.c
+  IntSemTest.c
+  GenQTest.c
+  EventGroupsDemo.c
+  BlockQ.c
+  AbortDelay.c
+  timers.c
+  tasks.c
+  stream_buffer.c
+  queue.c
+  heap_5.c
+  port.c
+  list.c
+  event_groups.c
+  croutine.c
+  trcSnapshotRecorder.c
+  trcKernelPort.c
+  正在生成代码...
+f:\tcloud\master\courses\real-time_ system\hw2\freertosv10.2.1_191129\freertos\source\tasks.c(4499): warning C5045: 如果指定了 /Qspectre 开关，编译器会插入内存负载的 Spectre 缓解
+  f:\tcloud\master\courses\real-time_ system\hw2\freertosv10.2.1_191129\freertos\source\tasks.c(4489) : 注意: 在此行上通过对比检查索引 "x" 范围
+  f:\tcloud\master\courses\real-time_ system\hw2\freertosv10.2.1_191129\freertos\source\tasks.c(4511) : 注意: 此行上的源调用
+f:\tcloud\master\courses\real-time_ system\hw2\freertosv10.2.1_191129\freertos\demo\common\minimal\messagebufferamp.c(184): warning C5045: 如果指定了 /Qspectre 开关，编译器会插入内存负载的 Spectre 缓解
+  f:\tcloud\master\courses\real-time_ system\hw2\freertosv10.2.1_191129\freertos\demo\common\minimal\messagebufferamp.c(182) : 注意: 在此行上通过对比检查索引 "x" 范围
+  f:\tcloud\master\courses\real-time_ system\hw2\freertosv10.2.1_191129\freertos\demo\common\minimal\messagebufferamp.c(184) : 注意: 此行上的源调用
   WIN32.vcxproj -> F:\Tcloud\master\Courses\Real-Time_ System\hw2\FreeRTOSv10.2.1_191129\FreeRTOS\Demo\WIN32-MSVC\.\Debug\RTOSDemo.exe

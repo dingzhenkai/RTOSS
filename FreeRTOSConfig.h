@@ -39,7 +39,7 @@
  * FreeRTOS API DOCUMENTATION AVAILABLE ON THE FreeRTOS.org WEB SITE.  See
  * http://www.freertos.org/a00110.html
  *----------------------------------------------------------*/
-
+#define configUSE_EDF_SCHEDULER 1
 #define configUSE_PREEMPTION					0
 #define configUSE_PORT_OPTIMISED_TASK_SELECTION	1
 #define configUSE_IDLE_HOOK						1
