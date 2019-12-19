@@ -67,7 +67,9 @@ static void sleepingTask(void *pvParameters)
 	for (;; ) {
 		vTaskDelayUntil(&start, xBlockTime);
 		printf("sleeping_s: %d\r\n", xTaskGetTickCount());
-		TickType_t s = xTaskGetTickCount();		while (xTaskGetTickCount() < (s + 1000)) {		}
+		TickType_t s = xTaskGetTickCount();
+		while (xTaskGetTickCount() < (s + 1000)) {
+		}
 		printf("sleeping: %d\r\n", xTaskGetTickCount());
 	}
 }
@@ -80,7 +82,9 @@ static void breakfirstTask(void *pvParameters)
 	for (;; ) {
 		vTaskDelayUntil(&start, xBlockTime);
 		printf("breakfirst_s: %d\r\n", xTaskGetTickCount());
-		TickType_t s = xTaskGetTickCount();		while (xTaskGetTickCount() < (s + 800)) {		}
+		TickType_t s = xTaskGetTickCount();
+		while (xTaskGetTickCount() < (s + 200)) {
+		}
 		printf("breakfirst: %d\r\n", xTaskGetTickCount());
 	}
 }
@@ -94,7 +98,9 @@ static void workTask(void *pvParameters)
 	for (;; ) {
 		vTaskDelayUntil(&start, xBlockTime);
 		printf("work_s: %d\r\n", xTaskGetTickCount());
-		TickType_t s = xTaskGetTickCount();		while (xTaskGetTickCount() < (s + 600)) {		}
+		TickType_t s = xTaskGetTickCount();
+		while (xTaskGetTickCount() < (s + 1000)) {
+		}
 		printf("work: %d\r\n", xTaskGetTickCount());
 	}
 }
@@ -108,7 +114,9 @@ static void dinnerTask(void *pvParameters)
 	for (;; ) {
 		vTaskDelayUntil(&start, xBlockTime);
 		printf("dinner_s: %d\r\n", xTaskGetTickCount());
-		TickType_t s = xTaskGetTickCount();		while (xTaskGetTickCount() < (s + 2000)) {		}
+		TickType_t s = xTaskGetTickCount();
+		while (xTaskGetTickCount() < (s + 200)) {
+		}
 		printf("dinner: %d\r\n", xTaskGetTickCount());
 	}
 }
