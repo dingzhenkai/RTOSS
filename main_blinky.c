@@ -13,10 +13,10 @@
 #define	work_TASK_PRIORITY		( tskIDLE_PRIORITY + 1 )
 #define	dinner_TASK_PRIORITY		( tskIDLE_PRIORITY + 2 )*/
 
-#define sleeping_TASK_PRIORITY		1
-#define	breakfirst_TASK_PRIORITY		1
+#define sleeping_TASK_PRIORITY		4
+#define	breakfirst_TASK_PRIORITY		3
 #define	work_TASK_PRIORITY		1
-#define	dinner_TASK_PRIORITY		1
+#define	dinner_TASK_PRIORITY		2
 
 #define FREQUENCY_MS			pdMS_TO_TICKS( 2400UL )
 
