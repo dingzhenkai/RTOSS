@@ -40,8 +40,9 @@
  * http://www.freertos.org/a00110.html
  *----------------------------------------------------------*/
 #define configUSE_EDF_SCHEDULER 0
-#define configUSE_FIFO_SCHEDULER 1
-#define configUSE_PRIORITY_SCHEDULER 0
+#define configUSE_FIFO_SCHEDULER 0
+#define configUSE_PRIORITY_SCHEDULER 1
+#define configUSE_RR_SCHEDULER 0
 #define configUSE_PREEMPTION					0
 #define configUSE_PORT_OPTIMISED_TASK_SELECTION	1
 #define configUSE_IDLE_HOOK						1

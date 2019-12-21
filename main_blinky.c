@@ -29,10 +29,10 @@ void main_blinky( void )
 {
 	TickType_t xNextWakeTime;
 	xNextWakeTime = xTaskGetTickCount();
-	TickType_t lsleeping[2] = {xNextWakeTime, 1000};
-	TickType_t lbreakfirst[2] = { xNextWakeTime, 400 };
-	TickType_t lwork[2] = { xNextWakeTime, 1600 };
-	TickType_t ldinner[2] = { xNextWakeTime, 400 };
+	TickType_t lsleeping[3] = {xNextWakeTime, 1000, 4};
+	TickType_t lbreakfirst[3] = { xNextWakeTime, 400, 1 };
+	TickType_t lwork[3] = { xNextWakeTime, 1600, 1 };
+	TickType_t ldinner[3] = { xNextWakeTime, 400, 1 };
 
 
 	xTaskCreate(sleepingTask,			/* The function that implements the task. */
@@ -79,6 +79,7 @@ static void sleepingTask(void *pvParameters)
 	for (;; ) {
 		vTaskDelayUntil(&start, xBlockTime);
 		printf("sleeping_s: %d\r\n", xTaskGetTickCount());
+		// simulator 
 		TickType_t s = xTaskGetTickCount();
 		while (xTaskGetTickCount() < (s + 1000)) {
 		}
